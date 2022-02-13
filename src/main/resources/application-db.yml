@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name:
+    username:
+    password:
+    url:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL57Dialect

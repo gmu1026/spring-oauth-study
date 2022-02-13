@@ -1,0 +1,30 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId:
+            clientSecret:
+            scope:
+              - email
+              - profile
+          kakao:
+            clientId:
+            clientSecret:
+            scope:
+              - profile_nickname
+              - account_email
+          github:
+            clientId:
+            clientSecret:
+            redirectUri:
+            scope:
+              - user:email
+              - read:user
+
+app:
+  auth:
+    tokenSecret: ''
+    tokenExpiry: 3600000 # 30분
+    refreshTokenExpiry: 43200000 # 12시간
